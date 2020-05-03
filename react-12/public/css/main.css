@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+
+*,
+*:after,
+*:before {
+	box-sizing: border-box;
+}
+
+/* Configurações gerais */
+
+body { 
+	background-color: #FAFAFA; 
+}
+
+a, strong { 
+	cursor: pointer; 
+}
+
+li { 
+	list-style-type: none; 
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+}
+
+.border-radius-item {
+	border-radius: 50%;
+}
+
+.margin {
+	width: 100%;
+	padding: 0 20px;
+}
+
+.intern-margin {
+	width: 100%;
+	padding: 0 10px;
+}
+
+.intern-padding {
+	padding: 8px 10px;
+}
+
+/* nav bar - menu  */
+
+.navbar {
+	background-color: #fff;
+	height: 50px;
+	border-bottom: 1px solid #D4D4D4;
+	display: flex;
+}
+
+.navbar__container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.navbar__logo { 
+	height: 40px; 
+}
+
+.navbar__message { 
+	color: #000; 
+}
+
+/* stories */
+
+.stories {
+	padding: 0;
+	margin: 0;
+}
+
+.stories__container {
+	background-color: #F2F2F2;
+	display: flex;
+	padding: 20px 10px;
+}
+
+.stories__profile {
+	height: 78px;
+	width: 78px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-right: 10px;
+}
+
+.stories__profile--true {
+	background: linear-gradient(45deg, #F5A04D 0%, #A00F8B 100%);
+	border-radius: 50%;
+}
+
+.stories__photo {
+	border: 3px solid #FAFAFA;
+	height: 72px;
+	width: 72px;
+	overflow: hidden;
+}
+
+.stories__photo img { 
+	height: 100%; 
+}
+
+/* feed */
+
+.feed {
+	height: 500px;
+	width: 100%;
+}
+
+.card {
+	width: 100%;
+	box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.1);
+	border-radius: 6px;
+	margin-bottom: 20px;
+}
+
+.card__header {
+	background-color: #fff;
+	border-radius: 6px 6px 0 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.card__user {
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+}
+
+.card__user-photo{ 
+	height: 40px; 
+}
+
+.card__user-name {
+	margin-left: 10px;
+	font-size: 13px;
+	font-weight: bold;
+}
+
+.card__post-photo { width: 100%; }
+
+.card__interactions {
+	background-color: #fff;
+	display: flex;
+	justify-content: space-between;
+}
+
+.interact__btn {
+	border: none;
+	background-color: transparent;
+	outline: none;
+	font-size: 24px;
+}
+
+.interact__btn-like:hover { color: #AF1616 }
+
+.interact__btn-comment:hover,
+.interact__btn-save:hover { 
+	color: #727272;
+}
+
+.card__status { 
+	background-color: #F2F2F2;
+	display: flex;
+}
+
+.card__status-photo {
+	height: 35px;
+	cursor: pointer;
+}
+
+.card__status-likes {
+	font-size: 14px;
+	margin-left: 8px;
+}
+
+/*  configurações para utilização em desktop  */
+
+@media (min-width: 812px){
+	.intern-margin {
+		margin: 0 auto;
+		width: 730px;
+	}
+}
+
+
+
+
+
+
