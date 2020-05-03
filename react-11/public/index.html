@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html class="no-js" lang="pt-br">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="x-ua-compatible" content="ie=edge" />
+		<title>IMDB - CodeNation Filmes</title>
+		<meta name="description" content="" />
+		<link rel="shortcut icon" type="image/png" href="favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<link rel="stylesheet" href="css/normalize.css" />
+		<link rel="stylesheet" href="css/main.css" />
+		<link 
+			href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" 
+			rel="stylesheet"/>
+		<link 
+			href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" 
+			rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" 
+			crossorigin="anonymous"/>	
+	</head>
+
+<body>
+	<header class="topo">
+		<nav class="topo-menu">
+			<div class="container">
+				<!-- logotipo IMDB cabeçalho -->
+				<a href="#" class="topo-logo">
+					<img src="/public/img/logo-imdb.jpg" alt="logo IMDB">
+				</a>
+
+				<!-- opções de menu - top page -->
+				<ul class="topo-listamenu">
+					<li class="topo-listamenu-option"><a href="#">LANÇAMENTOS</a></li>
+					<li class="topo-listamenu-option"><a href="#">CRÍTICAS</a></li>
+					<li class="topo-listamenu-option"><a href="#">EM CARTAZ</a></li>
+				</ul>
+
+				<!-- informações do usuario logado -->
+				<div class="topo-usuariologado">
+					<div class="topo-usuariologado-foto">
+						<img src="/public/img/walter-white.jpg" alt="foto de perfil Walter White" />
+					</div>
+
+					<div class="topo-usuariologado-nome">WALTER WHITE</div>
+				</div>
+			</div>
+		</nav>
+
+		<!-- anúncio no topo - pré lançamento -->
+		<div class="topo-lancamento">
+			<div class="container">
+
+				<h2 class="topo-titulo">MAD MAX: ESTRADA DA FÚRIA</h2>
+
+				<p class="topo-genero">
+					<a href="#" class="topo-genero-option">AVENTURA</a>
+					<a href="#" class="topo-genero-option"> SCI-FI</a>
+					<a href="#" class="topo-genero-option">TERROR</a> 
+				</p>
+
+				<a href="#" class="topo-botao">Assistir Trailer
+					<i class="fa fa-play-circle-o"></i>
+				</a>
+
+				<div class="topo-lancamentos">
+					<p>Nos Cinemas</p>
+					<p>15 de Outubro de 2015 (Brasil)</p>
+				</div>
+
+			</div>
+		</div>
+	</header>
+
+	<div class="vitrine">
+		<!-- menu principal -->	
+		<nav class="vitrine-menu">
+			<div class="container">
+				<ul class="vitrine-listamenu">
+					<li class="vitrine-listamenu-option"><a href="#">NOS CINEMAS</a></li>
+					<li class="vitrine-listamenu-option"><a href="#">EM BREVE</a></li>
+					<li class="vitrine-listamenu-option"><a href="#">BILHETERIA</a></li>
+					<li class="vitrine-listamenu-option"><a href="#">SÉRIES</a></li>
+					<li class="vitrine-listamenu-option"><a href="#">TRAILERS</a></li>
+				</ul>
+			</div>
+		</nav>
+	</div>
+
+	<main class="filmes">
+		<!---
+		<div class="filme">
+			<div class="filme-header">
+				<img src="/public/img/poster-moonlight.jpg" alt="poster divulgação - filme moonlight"/>
+					<div class="info">
+						<h3>MOONLIGHT</h3>
+						<a href="#" class="play-trailer"
+							><i class="fa fa-play" aria-hidden="true"></i
+						></a>
+					</div>
+			</div>
+			<div class="filme-body">
+				<div class="filme-content">
+					<div>
+						<h3 class="filme-titulo">MOONLIGHT</h3>
+						<p class="genero">
+							<a href="#" class="genero-option">Drama</a>
+						</p>
+					</div>
+
+					<div class="filme-footer">
+						<div class="avaliacao">
+							<i class="fa fa-heart" aria-hidden="true"></i> 
+							7.0 
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="filme">
+			<div class="filme-header">
+				<img src="/public/img/poster-bladerunner.jpg" alt="poster divulgação - filme moonlight"/>
+					<div class="info">
+						<h3>MOONLIGHT</h3>
+						<a href="#" class="play-trailer"
+							><i class="fa fa-play" aria-hidden="true"></i
+						></a>
+					</div>
+			</div>
+			<div class="filme-body">
+				<div class="filme-content">
+					<div>
+						<h3 class="filme-titulo">MOONLIGHT</h3>
+						<p class="genero">
+							<a href="#" class="genero-option">Drama</a>
+						</p>
+					</div>
+
+					<div class="filme-footer">
+						<div class="avaliacao">
+							<i class="fa fa-heart" aria-hidden="true"></i> 
+							7.0
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="filme">
+			<div class="filme-header">
+				<img src="/public/img/poster-moonlight.jpg" alt="poster divulgação - filme moonlight"/>
+					<div class="info">
+						<h3>MOONLIGHT</h3>
+						<a href="#" class="play-trailer"
+							><i class="fa fa-play" aria-hidden="true"></i
+						></a>
+					</div>
+			</div>
+			<div class="filme-body">
+				<div class="filme-content">
+					<div>
+						<h3 class="filme-titulo">MOONLIGHT</h3>
+						<p class="genero">
+							<a href="#" class="genero-option">Drama</a>
+						</p>
+					</div>
+
+					<div class="filme-footer">
+						<div class="avaliacao">
+							<i class="fa fa-heart" aria-hidden="true"></i> 
+							7.0 
+						</div>
+					</div>
+				</div>
+			</div>
+		</div> -->
+
+		<div class="filme">
+			<figure class="banner">
+				<img src="/public/img/poster-moonlight.jpg" alt="poster divulgação - filme moonlight"/>
+					<div class="info">
+						<h3>MOONLIGHT</h3>
+						<a href="#" class="play-trailer">
+						<i class="fa fa-play" aria-hidden="true"></i>
+						</a>
+					</div>
+			</figure>
+
+			<div class="sinopse">
+				<h3 class="titulo">MOONLIGHT</h3>
+					<p class ="genero">
+						<a href="#" class="genero-option">Drama</a>
+					</p>
+			</div>
+
+			<div class="nota">
+				<i class="fa fa-heart" aria-hidden="true"></i> 
+				7.0 
+			</div>
+		</div>
+
+		<div class="filme">
+			<figure class="banner">
+				<img src="/public/img/poster-bladerunner.jpg" alt="poster divulgação - filme blade runner"/>
+					<div class="info">
+						<h3>BLADE RUNNER</h3>
+						<a href="#" class="play-trailer">
+						<i class="fa fa-play" aria-hidden="true"></i>
+						</a>
+					</div>
+			</figure>
+
+			<div class="sinopse">
+				<h3 class="titulo">BLADE RUNNER</h3>
+					<p class ="genero">
+						<a href="#" class="genero-option">Aventura,</a>
+						<a href="#" class="genero-option">SCI-FI,</a>
+					</p>
+			</div>
+
+			<div class="nota">
+				<i class="fa fa-heart" aria-hidden="true"></i> 
+				7.0 
+			</div>
+		</div>
+
+		<div class="filme">
+			<figure class="banner">
+				<img src="/public/img/poster-mad-max.jpg" alt="poster divulgação - filme mad max"/>
+					<div class="info">
+						<h3>MAD MAX</h3>
+						<a href="#" class="play-trailer">
+						<i class="fa fa-play" aria-hidden="true"></i>
+						</a>
+					</div>
+			</figure>
+
+			<div class="sinopse">
+				<h3 class="titulo">MAD MAX</h3>
+					<p class ="genero">
+						<a href="#" class="genero-option">Aventura,</a>
+						<a href="#" class="genero-option">SCI-FI,</a>
+						<a href="#" class="genero-option">Terror</a>
+					</p>
+			</div>
+
+			<div class="nota">
+				<i class="fa fa-heart" aria-hidden="true"></i> 
+				7.0 
+			</div>
+		</div>
+
+		<div class="filme">
+			<figure class="banner">
+				<img src="/public/img/poster-alita.jpg" alt="poster divulgação - filme Alita"/>
+					<div class="info">
+						<h3>ALITA</h3>
+						<a href="#" class="play-trailer">
+						<i class="fa fa-play" aria-hidden="true"></i>
+						</a>
+					</div>
+			</figure>
+
+			<div class="sinopse">
+				<h3 class="titulo">ALITA</h3>
+					<p class ="genero">
+						<a href="#" class="genero-option">Aventura,</a>
+						<a href="#" class="genero-option">SCI-FI,</a>
+					</p>
+			</div>
+
+			<div class="nota">
+				<i class="fa fa-heart" aria-hidden="true"></i> 
+				7.0 
+			</div>
+		</div>
+
+		<div class="filme">
+			<figure class="banner">
+				<img src="/public/img/poster-batman-superman.jpg" alt="poster divulgação - filme Batman versus Superman"/>
+					<div class="info">
+						<h3>BATMAN VS SUPERMAN</h3>
+						<a href="#" class="play-trailer">
+						<i class="fa fa-play" aria-hidden="true"></i>
+						</a>
+					</div>
+			</figure>
+
+			<div class="sinopse">
+				<h3 class="titulo">BATMAN VS SUPERMAN</h3>
+					<p class ="genero">
+						<a href="#" class="genero-option">Ação,</a>
+						<a href="#" class="genero-option">Drama</a>
+					</p>
+			</div>
+
+			<div class="nota">
+				<i class="fa fa-heart" aria-hidden="true"></i> 
+				7.0 
+			</div>
+		</div>
+
+		<div class="filme">
+			<figure class="banner">
+				<img src="/public/img/poster-jurassic-world.jpg" alt="poster divulgação - filme Jurassic World"/>
+					<div class="info">
+						<h3>JURASSIC WORLD</h3>
+						<a href="#" class="play-trailer">
+						<i class="fa fa-play" aria-hidden="true"></i>
+						</a>
+					</div>
+			</figure>
+
+			<div class="sinopse">
+				<h3 class="titulo">JURASSIC WORLD</h3>
+					<p class ="genero">
+						<a href="#" class="genero-option">Aventura,</a>
+						<a href="#" class="genero-option">Terror</a>
+					</p>
+			</div>
+
+			<div class="nota">
+				<i class="fa fa-heart" aria-hidden="true"></i> 
+				7.0 
+			</div>
+		</div>
+
+		<div class="filme">
+			<figure class="banner">
+				<img src="/public/img/poster-civil-war.jpg" alt="poster divulgação - filme Guerra Civil"/>
+					<div class="info">
+						<h3>GUERRA CIVIL</h3>
+						<a href="#" class="play-trailer">
+						<i class="fa fa-play" aria-hidden="true"></i>
+						</a>
+					</div>
+			</figure>
+
+			<div class="sinopse">
+				<h3 class="titulo">GUERRA CIVIL</h3>
+					<p class ="genero">
+						<a href="#" class="genero-option">Aventura,</a>
+						<a href="#" class="genero-option">Ação</a>
+					</p>
+			</div>
+
+			<div class="nota">
+				<i class="fa fa-heart" aria-hidden="true"></i> 
+				7.0 
+			</div>
+		</div>
+
+		<div class="filme">
+			<figure class="banner">
+				<img src="/public/img/poster-capita-marvel.jpg" alt="poster divulgação - filme Capitã Marvel"/>
+					<div class="info">
+						<h3>CAPITÃ MARVEL</h3>
+						<a href="#" class="play-trailer">
+						<i class="fa fa-play" aria-hidden="true"></i>
+						</a>
+					</div>
+			</figure>
+
+			<div class="sinopse">
+				<h3 class="titulo">CAPITÃ MARVEL</h3>
+					<p class ="genero">
+						<a href="#" class="genero-option">SCI-FI</a>
+					</p>
+			</div>
+
+			<div class="nota">
+				<i class="fa fa-heart" aria-hidden="true"></i> 
+				9.0 
+			</div>
+		</div>
+
+		<div class="filme">
+			<figure class="banner">
+				<img src="/public/img/poster-coringa.jpg" alt="poster divulgação - filme Coringa"/>
+					<div class="info">
+						<h3>CORINGA</h3>
+						<a href="#" class="play-trailer">
+						<i class="fa fa-play" aria-hidden="true"></i>
+						</a>
+					</div>
+			</figure>
+
+			<div class="sinopse">
+				<h3 class="titulo">CORINGA</h3>
+					<p class ="genero">
+						<a href="#" class="genero-option">Ação,</a>
+						<a href="#" class="genero-option">Drama</a>
+					</p>
+			</div>
+
+			<div class="nota">
+				<i class="fa fa-heart" aria-hidden="true"></i> 
+				10 
+			</div>
+		</div>
+
+		<div class="filme">
+			<figure class="banner">
+				<img src="/public/img/poster-liga-justica.jpg" alt="poster divulgação - filme Liga da Justiça"/>
+					<div class="info">
+						<h3>LIGA DA JUSTIÇA</h3>
+						<a href="#" class="play-trailer">
+						<i class="fa fa-play" aria-hidden="true"></i>
+						</a>
+					</div>
+			</figure>
+
+			<div class="sinopse">
+				<h3 class="titulo">LIGA DA JUSTIÇA</h3>
+					<p class ="genero">
+						<a href="#" class="genero-option">Aventura,</a>
+						<a href="#" class="genero-option">Ação</a>
+					</p>
+			</div>
+
+			<div class="nota">
+				<i class="fa fa-heart" aria-hidden="true"></i> 
+				7.5 
+			</div>
+		</div>
+
+		<div class="filme">
+			<figure class="banner">
+				<img src="/public/img/poster-star-wars.jpg" alt="poster divulgação - filme Star Wars VII"/>
+					<div class="info">
+						<h3>STAR WARS VII</h3>
+						<a href="#" class="play-trailer">
+						<i class="fa fa-play" aria-hidden="true"></i>
+						</a>
+					</div>
+			</figure>
+
+			<div class="sinopse">
+				<h3 class="titulo">STAR WARS VII</h3>
+					<p class ="genero">
+						<a href="#" class="genero-option">Aventura,</a>
+						<a href="#" class="genero-option">SCI-FI</a>
+					</p>
+			</div>
+
+			<div class="nota">
+				<i class="fa fa-heart" aria-hidden="true"></i> 
+				7.0 
+			</div>
+		</div>
+
+		<div class="filme">
+			<figure class="banner">
+				<img src="/public/img/poster-pantera-negra.jpg" alt="poster divulgação - filme Pantera Negra"/>
+					<div class="info">
+						<h3>PANTERA NEGRA</h3>
+						<a href="#" class="play-trailer">
+						<i class="fa fa-play" aria-hidden="true"></i>
+						</a>
+					</div>
+			</figure>
+
+			<div class="sinopse">
+				<h3 class="titulo">PANTERA NEGRA</h3>
+					<p class ="genero">
+						<a href="#" class="genero-option">Aventura,</a>
+						<a href="#" class="genero-option">SCI-FI</a>
+					</p>
+			</div>
+
+			<div class="nota">
+				<i class="fa fa-heart" aria-hidden="true"></i> 
+				7.0 
+			</div>
+		</div>
+	</main>
+
+	<footer class="rodape">
+		<div class="container">
+			<img class="logo-rodape" src="img/logo-imdb.jpg" alt="logotipo IBDM" />
+
+			<ul class="rodape-contatos">
+				<li class="rodape-contatos-option icone-twitter">
+					<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+				</li>
+				<li class="rodape-contatos-option icone-facebook">
+					<a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+				</li>
+				<li class="rodape-contatos-option icone-instagram">
+					<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+				</li>
+			</ul>
+		</div>
+	</footer>
+	  
+</body>
+</html>
+	
